@@ -17,12 +17,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        inicializar();
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Intent avanzar = new Intent(MainActivity.this,NewActivity.class);
-                //avanzar.putExtra("dato",et1.getText().toString());
-                //startActivity(avanzar);
+                Intent avanzar = new Intent(MainActivity.this,New.class);
+                avanzar.putExtra("dato",et1.getText().toString());
+                avanzar.putExtra("dato2",et2.getText().toString());
+                avanzar.putExtra("dato3", et3.getText().toString());
+                avanzar.putExtra("dato4",et4.getText().toString());
+                startActivity(avanzar);
             }
         });
     }
