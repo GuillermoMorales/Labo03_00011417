@@ -15,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Nombre" />
+        android:hint="@string/nombre" />
 
     <EditText
         android:id="@+id/et2"
@@ -23,14 +23,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:hint="Contraseña" />
+        android:hint="@string/contra" />
 
     <EditText
         android:id="@+id/et3"
         android:layout_margin="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:hint="@string/email"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -38,7 +38,7 @@
         android:layout_margin="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Sexo"
+        android:hint="@string/sexo"
         android:inputType="textPersonName"
         />
 
@@ -48,5 +48,5 @@
         android:layout_gravity="center"
         android:layout_margin="4dp"
         android:layout_height="wrap_content"
-        android:text="Enviar" />
+        android:text="@string/enviar" />
 </LinearLayout>
